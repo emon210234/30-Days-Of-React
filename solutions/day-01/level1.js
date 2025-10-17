@@ -63,5 +63,48 @@ if(company_exists != -1){
 }
 else{
     console.log("Company does not exist");
-
+}
 // 14. Filter out companies which have more than one 'o' without the filter method
+console.log("Printing companies with more than one 'o'");
+for(let i = 0; i < itCompanes.length; i++){
+    let count = 0;
+    for(let j = 0; j < itCompanes[i].length; j++){
+        if(itCompanes[i][j] == 'o'){
+            count += 1;
+        }
+    }
+    if (count > 1){
+        console.log(itCompanes[i]);
+    }
+}
+
+// 15. Sort the array using sort() method
+console.log(itCompanes.sort());
+
+// 16. Reverse the array using reverse() method
+console.log(itCompanes.reverse());
+
+// 17. Slice out the first 3 companies from the array
+console.log(itCompanes.slice(0, 3));
+
+// 18. Slice out the last 3 companies from the array
+console.log(itCompanes.slice(-3, ));
+
+// 19. Slice out the middle IT company or companies
+console.log(itCompanes.slice(itCompanes.length/2, itCompanes.length/2 + 1))
+
+// 20. Remove the first IT company from the array
+console.log(itCompanes.shift());
+
+// 21. Remove the middle IT company from the array
+console.log(itCompanes.shift(itCompanes.length));
+
+// 22. Remove the last IT company from the array 
+console.log(itCompanes.pop());
+
+// 23. Remove all IT companies
+console.log(itCompanes.splice());
+
+
+
+
