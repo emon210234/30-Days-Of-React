@@ -27,3 +27,4 @@ switch (month) {
   default:
     console.log("Invalid month.");
 }
+
